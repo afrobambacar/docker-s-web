@@ -1,0 +1,7 @@
+version: '3'
+services:
+  ubuntu:
+    image: ubuntu:16.04
+    container_name: ubuntu
+    command: /bin/bash "useradd --user-group --create-home ubuntu && su - ubuntu"
+    restart: always
